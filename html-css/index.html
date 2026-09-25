@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Faujian — Software & AI Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="logo">Faujian.dev</p>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about" class="about-section">
+      <h1>Muhammad Faujian</h1>
+      <p class="tagline">Self-taught Software &amp; AI Engineer in training — based in Bandung, Indonesia.</p>
+      <p>
+        I run <a href="https://angkasaelektrik.com/" target="_blank" rel="noopener">PT Angkasa Panelindo Elektrik</a>,
+        an electrical panel company serving industrial, property-development, and private electrical/MEP
+        contractor clients, and co-manage Mianis, an early-stage homemade chocolate snack brand. Right now
+        I'm building toward a career in software and AI engineering — this page is Checkpoint 1 of that transition.
+      </p>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>HTML &amp; CSS</h3>
+          <p>Semantic markup, box model, Flexbox and Grid layout.</p>
+        </article>
+        <article class="skill-card">
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, events, array methods.</p>
+        </article>
+        <article class="skill-card">
+          <h3>TypeScript</h3>
+          <p>Interfaces, type aliases, union types.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Tailwind CSS</h3>
+          <p>Utility-first styling, responsive layouts.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Business Operations</h3>
+          <p>Running PT Angkasa Panelindo Elektrik and Mianis end-to-end.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Project Management</h3>
+          <p>Procurement studies and program tracking experience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-list">
+        <article class="project-card">
+          <h3><a href="https://github.com/mfaujian/multivendor-ecommerce-backend" target="_blank" rel="noopener">Multivendor E-Commerce Backend</a></h3>
+          <p>REST API backend for a multivendor marketplace, built as a RevoU portfolio project.</p>
+        </article>
+        <article class="project-card">
+          <h3>Frontend Foundations (this checkpoint)</h3>
+          <p>HTML, CSS, JavaScript, TypeScript and Tailwind fundamentals — the building blocks for RevoShop.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9+ ]{8,15}">
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason for Contact</label>
+          <select id="reason" name="reason">
+            <option value="general">General Inquiry</option>
+            <option value="job">Job Opportunity</option>
+            <option value="collab">Collaboration</option>
+          </select>
+        </div>
+
+        <div class="form-group form-group--full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group form-group--full form-group--checkbox">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">I agree to be contacted via email regarding this message.</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Muhammad Faujian. Built for RevoU Checkpoint 1. <a href="https://github.com/mfaujian" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
