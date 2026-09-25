@@ -246,3 +246,43 @@ input:focus, select:focus, textarea:focus {
     padding: 16px;
   }
 }
+
+.quote {
+  border-left: 3px solid #0b1f3a;
+  padding-left: 16px;
+  margin: 16px 0;
+  font-style: italic;
+  color: #486581;
+}
+
+.timeline {
+  list-style: none;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline li {
+  padding-left: 16px;
+  border-left: 3px solid #0b1f3a;
+  font-size: 0.95rem;
+}
+
+.timeline-role {
+  font-weight: 600;
+}
+
+.timeline-date {
+  color: #627d98;
+  font-size: 0.85rem;
+}
+
+.skill-card, .project-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.skill-card:hover, .project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(11, 31, 58, 0.08);
+}
