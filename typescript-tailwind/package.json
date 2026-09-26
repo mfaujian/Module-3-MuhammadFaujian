@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build:ts": "tsc",
-  "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css",
-  "build": "npm run build:ts && npm run build:css",
-  "watch:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+    "build:ts": "tsc",
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css",
+    "build": "npm run build:ts && npm run build:css",
+    "watch:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",

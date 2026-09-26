@@ -16,13 +16,11 @@ Muhammad Faujian's Checkpoint 1 submission for RevoU's Full-Stack Software Engin
   - [1. `html-css/` — Semantic Profile Page](#1-html-css--semantic-profile-page)
   - [2. `javascript/` — Vanilla JS Exercises](#2-javascript--vanilla-js-exercises)
   - [3. `typescript-tailwind/` — Typed Product Catalog](#3-typescript-tailwind--typed-product-catalog)
-  - [Prerequisites](#prerequisites)
   - [Screenshots](#screenshots)
     - [Profile page — desktop](#profile-page--desktop)
     - [Profile page — mobile (375px)](#profile-page--mobile-375px)
     - [Product catalog — live search \& Tailwind styling](#product-catalog--live-search--tailwind-styling)
   - [Tech Stack](#tech-stack)
-  - [Scope Note](#scope-note)
   - [Author](#author)
 
 ## Folder Structure
@@ -74,9 +72,7 @@ A small TypeScript + Tailwind CSS v4 project demonstrating:
 - A fully typed, interactive catalog: renders from typed data, a live search filter, and an add-to-cart counter
 
 Structure:
-- `src/types.ts` — interfaces, type alias, union type, modeled on the same `Product`/`Category` shape as the [multivendor-ecommerce-backend](https://github.com/mfaujian/multivendor-ecommerce-backend) database (`sellerId`, `categoryId`, `stock`, `isActive`)
-- `src/data.ts` — typed product and category data
-- `src/app.ts` — rendering, live search, cart counter, typed→Tailwind class mapping
+- `src/index.ts` — Containing all application types, mock electrical product datasets, cart calculation functions, dynamic DOM rendering, live search filtering, and conditional Tailwind CSS class mapping.
 - `src/input.css` — Tailwind entry point
 - `tsconfig.json` / `package.json` — `tsc` and the Tailwind CLI, both compiling into `dist/`
 
@@ -88,10 +84,6 @@ npm run build
 npx serve .
 ```
 Then open the URL `serve` prints. Opening `index.html` directly won't work — browsers block ES module imports loaded over `file://`.
-
-## Prerequisites
-
-Node.js and npm (already installed if you followed the setup steps in this repo's history). No other runtime is required — `html-css/` and `javascript/` need nothing but a browser.
 
 ## Screenshots
 
@@ -108,10 +100,6 @@ Node.js and npm (already installed if you followed the setup steps in this repo'
 ## Tech Stack
 
 HTML5 · CSS3 (Grid, Flexbox, media queries) · vanilla JavaScript (ES6+) · TypeScript 5 · Tailwind CSS v4
-
-## Scope Note
-
-This checkpoint intentionally does not integrate with the `multivendor-ecommerce-backend` repository — per the assignment scope, that integration begins in Checkpoint 2 with Next.js.
 
 ## Author
 
