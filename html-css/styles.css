@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
@@ -245,14 +249,6 @@ input:focus, select:focus, textarea:focus {
   section {
     padding: 16px;
   }
-}
-
-.quote {
-  border-left: 3px solid #0b1f3a;
-  padding-left: 16px;
-  margin: 16px 0;
-  font-style: italic;
-  color: #486581;
 }
 
 .timeline {
